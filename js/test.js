@@ -11,7 +11,7 @@ $("#MSCI_AWCI").on("click",function(){
     rate = xRandomNormal(0.0597,0.1845);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
     console.log(asset*YENUSD/10000);
     }
     if(asset*YENUSD/10000 >= 2000){
@@ -26,7 +26,7 @@ $("#Deposit").on("click",function(){
     let term = 30;
     for (let i = 0; i < term; i++) {
     asset = asset + saving;
-    $("h1").html("資産総額 "+Math.round(asset)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset)+"万円");
     console.log(asset);
     }
     if(asset >= 2000){
@@ -44,7 +44,7 @@ $("#TOPIX").on("click",function(){
     rate = xRandomNormal(0.0404,0.2161);
     profit = asset * rate;
     asset = asset + profit + saving;
-    $("h1").html("資産総額 "+Math.round(asset)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset)+"万円");
     console.log(asset);
     }
     if(asset >= 2000){
@@ -63,7 +63,7 @@ $("#MSCI_EM").on("click",function(){
     rate = xRandomNormal(0.1365,0.2872);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
     console.log(asset*YENUSD/10000);
     }
     if(asset*YENUSD/10000 >= 2000){
@@ -82,7 +82,7 @@ $("#MSCI_Developed").on("click",function(){
     rate = xRandomNormal(0.0580,0.1792);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
     console.log(asset*YENUSD/10000);
     }
     if(asset*YENUSD/10000 >= 2000){
@@ -101,7 +101,7 @@ $("#USBOND").on("click",function(){
     rate = xRandomNormal(0.0204,0.060);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
     console.log(asset*YENUSD/10000);
     }
     if(asset*YENUSD/10000 >= 2000){
@@ -113,24 +113,24 @@ $("#USBOND").on("click",function(){
 // $("#aa").on("click",function(){
 //     const omikuji = Math.floor(xRandomNormal(0,1)*6)
 // if(omikuji === 0){
-//     $("h1").html("大吉");
-//     $("h1").css("color","red");
+//     $("h2").html("大吉");
+//     $("h2").css("color","red");
 //     console.log("大吉");
 //     alert("おめでとう！")
 // }else if(omikuji === 1){
-//     $("h1").html("中吉");
+//     $("h2").html("中吉");
 //     console.log("中吉")
 // }else if(omikuji === 2){
-//     $("h1").html("小吉");
+//     $("h2").html("小吉");
 //     console.log("小吉")
 // }else if(omikuji === 3){
-//     $("h1").html("吉");
+//     $("h2").html("吉");
 //     console.log("吉")
 // }else if(omikuji === 4){
-//     $("h1").html("凶");
+//     $("h2").html("凶");
 //     console.log("凶")
 // }else if(omikuji === 5){
-//     $("h1").html("大凶");
+//     $("h2").html("大凶");
 //     console.log("大凶")
 // }
 //     // alert(111)
@@ -180,24 +180,24 @@ $("#USBOND").on("click",function(){
 // $("#aa").on("click",function(){
 //     const omikuji = Math.floor(Math.random()*6)
 // if(omikuji === 0){
-//     $("h1").html("大吉");
-//     $("h1").css("color","red");
+//     $("h2").html("大吉");
+//     $("h2").css("color","red");
 //     console.log("大吉");
 //     alert("おめでとう！")
 // }else if(omikuji === 1){
-//     $("h1").html("中吉");
+//     $("h2").html("中吉");
 //     console.log("中吉")
 // }else if(omikuji === 2){
-//     $("h1").html("小吉");
+//     $("h2").html("小吉");
 //     console.log("小吉")
 // }else if(omikuji === 3){
-//     $("h1").html("吉");
+//     $("h2").html("吉");
 //     console.log("吉")
 // }else if(omikuji === 4){
-//     $("h1").html("凶");
+//     $("h2").html("凶");
 //     console.log("凶")
 // }else if(omikuji === 5){
-//     $("h1").html("大凶");
+//     $("h2").html("大凶");
 //     console.log("大凶")
 // }
 //     // alert(111)
