@@ -1,43 +1,47 @@
-// console.log(xRandomNormal(0,1))
-// let asset = 100;
-// let rate = xRandomNormal(0.03,0.01);
-// let profit;
-// let term = 30;
-// for (let i = 0; i < term; i++) {
-// profit = asset * rate;
-// asset = asset + profit;
-// $("h1").html(asset);
-// }
 
-$("#aa").on("click",function(){
+
+$("#MSCI_AWCI").on("click",function(){
     console.clear();
     let asset = 0;
-    let YENUSD = xRandomNormal(0.01,0.0001); 
-    let rate = xRandomNormal(0.03,0.01);
     let profit;
     let saving = 36;
     let term = 30;
     for (let i = 0; i < term; i++) {
-    YENUSD = xRandomNormal(0.01,0.0005); 
-    rate = xRandomNormal(0.03,0.05);
+    YENUSD = xRandomNormal(95.43,14.09); 
+    rate = xRandomNormal(0.0597,0.1845);
     profit = asset * rate;
-    asset = asset + profit + saving * 1/YENUSD;
-    $("h1").html("資産総額 "+Math.round(asset*YENUSD)+"万円");
-    console.log(asset*YENUSD);
+    asset = asset + profit + saving * YENUSD;
+    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    console.log(asset*YENUSD/10000);
     }
-    if(asset*YENUSD >= 2000){
+    if(asset*YENUSD/10000 >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
     }
 })
 
-$("#bb").on("click",function(){
+$("#Deposit").on("click",function(){
+    console.clear();
+    let asset = 0;
+    let saving = 36;
+    let term = 30;
+    for (let i = 0; i < term; i++) {
+    asset = asset + saving;
+    $("h1").html("資産総額 "+Math.round(asset)+"万円");
+    console.log(asset);
+    }
+    if(asset >= 2000){
+        alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
+    }
+})
+
+$("#TOPIX").on("click",function(){
     console.clear();
     let asset = 0;
     let profit;
     let saving = 36;
     let term = 30;
     for (let i = 0; i < term; i++) {
-    rate = xRandomNormal(0.01,0.01);
+    rate = xRandomNormal(0.0404,0.2161);
     profit = asset * rate;
     asset = asset + profit + saving;
     $("h1").html("資産総額 "+Math.round(asset)+"万円");
@@ -48,26 +52,62 @@ $("#bb").on("click",function(){
     }
 })
 
-$("#cc").on("click",function(){
+$("#MSCI_EM").on("click",function(){
     console.clear();
     let asset = 0;
     let profit;
     let saving = 36;
     let term = 30;
     for (let i = 0; i < term; i++) {
-    YENUSD = xRandomNormal(0.01,0.0005); 
-    rate = xRandomNormal(0.04,0.2);
+    YENUSD = xRandomNormal(95.43,14.09); 
+    rate = xRandomNormal(0.1365,0.2872);
     profit = asset * rate;
-    asset = asset + profit + saving * 1/YENUSD;
-    $("h1").html("資産総額 "+Math.round(asset*YENUSD)+"万円");
-    console.log(asset*YENUSD);
+    asset = asset + profit + saving * YENUSD;
+    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    console.log(asset*YENUSD/10000);
     }
-    if(asset*YENUSD >= 2000){
+    if(asset*YENUSD/10000 >= 2000){
+        alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
+    }
+})
+    
+$("#MSCI_Developed").on("click",function(){
+    console.clear();
+    let asset = 0;
+    let profit;
+    let saving = 36;
+    let term = 30;
+    for (let i = 0; i < term; i++) {
+    YENUSD = xRandomNormal(95.43,14.09); 
+    rate = xRandomNormal(0.0580,0.1792);
+    profit = asset * rate;
+    asset = asset + profit + saving * YENUSD;
+    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    console.log(asset*YENUSD/10000);
+    }
+    if(asset*YENUSD/10000 >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
     }
     })
-    
 
+$("#USBOND").on("click",function(){
+    console.clear();
+    let asset = 0;
+    let profit;
+    let saving = 36;
+    let term = 30;
+    for (let i = 0; i < term; i++) {
+    YENUSD = xRandomNormal(95.43,14.09); 
+    rate = xRandomNormal(0.0204,0.060);
+    profit = asset * rate;
+    asset = asset + profit + saving * YENUSD;
+    $("h1").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    console.log(asset*YENUSD/10000);
+    }
+    if(asset*YENUSD/10000 >= 2000){
+        alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
+    }
+    })
 
 // button tag
 // $("#aa").on("click",function(){
