@@ -12,7 +12,7 @@ $("#MSCI_AWCI").on("click",function(){
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
     $("h2").html("資産総額 "+Math.round(asset/YENUSD)+"万円");
-    console.log(asset*YENUSD/10000);
+    console.log(asset/YENUSD);
     }
     if(asset/YENUSD >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
