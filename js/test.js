@@ -11,10 +11,10 @@ $("#MSCI_AWCI").on("click",function(){
     rate = xRandomNormal(0.0597,0.1845);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset/YENUSD)+"万円");
     console.log(asset*YENUSD/10000);
     }
-    if(asset*YENUSD/10000 >= 2000){
+    if(asset/YENUSD >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
     }
 })
@@ -63,10 +63,10 @@ $("#MSCI_EM").on("click",function(){
     rate = xRandomNormal(0.1365,0.2872);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset/YENUSD)+"万円");
     console.log(asset*YENUSD/10000);
     }
-    if(asset*YENUSD/10000 >= 2000){
+    if(asset/YENUSD >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
     }
 })
@@ -82,10 +82,10 @@ $("#MSCI_Developed").on("click",function(){
     rate = xRandomNormal(0.0580,0.1792);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset/YENUSD)+"万円");
     console.log(asset*YENUSD/10000);
     }
-    if(asset*YENUSD/10000 >= 2000){
+    if(asset/YENUSD >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
     }
     })
@@ -101,10 +101,10 @@ $("#USBOND").on("click",function(){
     rate = xRandomNormal(0.0204,0.060);
     profit = asset * rate;
     asset = asset + profit + saving * YENUSD;
-    $("h2").html("資産総額 "+Math.round(asset*YENUSD/10000)+"万円");
+    $("h2").html("資産総額 "+Math.round(asset/YENUSD)+"万円");
     console.log(asset*YENUSD/10000);
     }
-    if(asset*YENUSD/10000 >= 2000){
+    if(asset/YENUSD >= 2000){
         alert("おめでとうございます！老後資産2000万円以上の形成に成功しました！")
     }
     })
